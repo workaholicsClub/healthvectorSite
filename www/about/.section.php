@@ -1,0 +1,1 @@
+<? $sSectionName = "О нас"; ?>

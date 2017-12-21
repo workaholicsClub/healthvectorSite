@@ -1,0 +1,39 @@
+<?
+$aMenuLinks = Array(
+  Array(
+    "Состав",
+    "stuff/",
+    Array(),
+    Array(),
+    ""
+  ),
+  Array(
+    "Функции",
+    "functions/",
+    Array(),
+    Array(),
+    ""
+  ),
+  Array(
+    "Полномочия",
+    "credentials/",
+    Array(),
+    Array(),
+    ""
+  ),
+  Array(
+    "Лекции для профессионалов",
+    "lectures/",
+    Array(),
+    Array(),
+    ""
+  ),
+  Array(
+    "Семинары и конференции",
+    "seminars/",
+    Array(),
+    Array(),
+    ""
+  )
+);
+?>

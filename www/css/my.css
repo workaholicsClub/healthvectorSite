@@ -1,0 +1,28 @@
+.section-news .news-content .anounce {
+  height: 100px;
+  overflow: hidden;
+}
+
+.section-news .news-content .heading {
+  height: 50px;
+  overflow: hidden;
+}
+
+.section-articles .wrap-art .heading {
+  height: 165px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.section-articles .wrap-art {
+  min-height: auto;
+} 
+
+.slider-container-main .group-btn-nav {
+  margin-top: 40px !important;
+}
+
+.slider-container-main .slide-content .description {
+  height: 175px;
+  overflow: hidden;
+}

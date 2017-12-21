@@ -1,0 +1,3 @@
+<?
+$MESS["TEST"] = "Test message";
+?>
