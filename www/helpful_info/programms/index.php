@@ -3,9 +3,7 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetPageProperty("title", "Программы реабилитации");
 $APPLICATION->SetTitle("Программы реабилитации");?>
 
- 
 <div class="page" style="margin-top: 30px">
-
 	<div class="content-information-help">
 		<div class="page">
 			<h2>Программа реабилитации</h2>

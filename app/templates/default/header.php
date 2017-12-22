@@ -11,6 +11,8 @@
   $isMainPage = ($curPage === '/');
   $isAuthorized = Tools::IsAuthorized();
 
+  $healthVectorPage = new \HealthVector\Page($APPLICATION);
+
   //global $jso;
   //$jso = BFactory::getJso();
   //$jso->load('site');
@@ -25,7 +27,7 @@
 	<meta name="viewport" id="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 	<meta name="yandex-verification" content="a669c71f3deb3d0b" />
 	<meta name="google-site-verification" content="q4yyEzsoZT8n6X7xE21-L6hvHOy2UnvhqW7Zmr-NMf8" />
-	<title><? $APPLICATION->ShowTitle(); ?></title>
+	<title><? $healthVectorPage->showBufferedPageTitle(); ?></title>
 	<link rel="stylesheet" href="/css/site.css<?php echo '?'.filemtime($_SERVER['DOCUMENT_ROOT'].'/css/site.css'); ?>">
 	<link type="text/css" rel="stylesheet" media="all" href="/css/my.css" />
 	<link rel="shortcut icon" href="/favicon.ico">
@@ -124,7 +126,7 @@
 
     <div class="row-h1">
       <div class="page">
-        <h1><?=$APPLICATION->ShowTitle(false);?></h1>
+        <h1><?$healthVectorPage->showBufferedPageTitle()?></h1>
       </div>
     </div>
   <?endif;?>

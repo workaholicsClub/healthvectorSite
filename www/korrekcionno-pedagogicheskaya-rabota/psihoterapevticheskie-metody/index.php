@@ -2,12 +2,13 @@
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("");
 $APPLICATION->SetPageProperty("title", "Психотерапевтические методы работы с детьми");
-// $APPLICATION->SetPageProperty("h1", "Коррекционно-педагогическая работа с особыми детьми");
-$APPLICATION->SetPageProperty("h2", "Психотерапевтические методы работы с детьми");?><!-- <section class="content"> -->
+//$APPLICATION->SetPageProperty("h1", "Коррекционно-педагогическая работа с особыми детьми");
+$APPLICATION->SetPageProperty("h2", "Психотерапевтические методы работы с детьми");
+?>
+<!-- <section class="content"> -->
 <div class="page">
 	<div class="content-information-help">
 		<div class="page">
-			 <h1>Психотерапевтические методы работы с детьми</h1>
 			<p>
 				В работе с детьми очень важно использовать гибкие формы психотерапевтической работы. Дети, которые отстают в развитии, не умеют правильно выразить свои чувства, что затрудняет общение со взрослыми и сверстниками, нуждаются в эмоциональном толчке для успешного преодоления психологических барьеров.
 			</p>
@@ -137,4 +138,4 @@ $APPLICATION->SetPageProperty("h2", "Психотерапевтические м
 );?>
 </div>
 <!-- </section> -->
-<?$APPLICATION->SetPageProperty("h1", "Коррекционно-педагогическая работа");?><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
+<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
