@@ -11,7 +11,7 @@ $APPLICATION->SetPageProperty("h1", "Нарушения цнс");
 				<span style="font-size: 12pt;"> </span><br>
 				<span style="font-size: 12pt;"> </span><span style="font-size: 12pt;"> </span><span style="font-size: 25px; font-style: normal;"><b><span style="font-size: 12pt;">!</span></b></span><span style="font-size: 12pt;"> &nbsp; </span><b><span style="font-size: 12pt;">Диагноз всегда ставит врач. Но если вы заподозрили, что у вашего ребенка есть патология ЦНС, пройдите тест на нашем сайте:</span></b><span style="font-size: 12pt;"> </span><span style="font-size: 12pt;"> </span>
 				<div style="text-align: center;">
-					<span style="font-size: 12pt;"> </span><span style="font-size: 12pt;"> </span><a class="btn btn--red-test" href="/tests/razvitie-tsns-i-priznaki-patologii/"><span style="font-size: 12pt;">Начать тест →</span></a><span style="font-size: 12pt;"> </span>
+					<span style="font-size: 12pt;"> </span><span style="font-size: 12pt;"> </span><a class="btn btn--red-test" href="/tests/patologicheskoe-razvitie-do-1-mesyatsa/"><span style="font-size: 12pt;">Начать тест →</span></a><span style="font-size: 12pt;"> </span>
 				</div>
 				<span style="font-size: 12pt;"> </span>
 			</div>

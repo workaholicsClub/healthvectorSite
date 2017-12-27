@@ -1,7 +1,7 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetTitle("Госпрограммы");
-$APPLICATION->SetPageProperty("h2", "Госпрограммы");
+$APPLICATION->SetTitle("Законы и госпрограммы");
+$APPLICATION->SetPageProperty("h2", "Законы и госпрограммы");
 $APPLICATION->SetPageProperty("h1", "Законодательство");
 ?>
 <div class="page">

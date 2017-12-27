@@ -4758,6 +4758,9 @@ ul.pagination a.active {
 .section-articles .wrap-art .pic-articles {
   position: relative;
   max-height: 267px;
+	border-bottom: 3px solid #0bc3db;
+}
+.section-articles .wrap-art:hover .pic-articles {
 	border-bottom: 3px solid #e40421;
 }
 .section-articles .wrap-art .pic-articles .arrow-art {
@@ -4847,7 +4850,7 @@ ul.pagination a.active {
 	border: 1px solid transparent;
 }
 .section-articles--page .wrap-art:hover .group-descript {
-	border: 1px solid #1fa2b3;
+	border: 1px solid #e40421;
 	border-top-color: transparent;
 }
 @media screen and (max-width : 1800px) {
