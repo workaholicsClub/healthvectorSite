@@ -2,8 +2,23 @@
 /etc/database/data/
 /etc/bitrix/data/
 /vendor/
-/www/bitrix_app/
 /app/php_interface/dbconn.php
 /app/php_interface/after_connect_d7.php
 /app/php_interface/after_connect.php
 .env
+
+# Боевое окружение
+/www/bitrix_app/
+.*
+!.gitignore
+/.config/
+/.local/
+/.ssh/
+/bin/
+/etc/.settings.php
+/etc/dbconn.php
+/etc/license_key.php
+/etc/p3p.xml
+/lib/
+/tmp/
+/var/
