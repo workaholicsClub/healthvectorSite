@@ -22,7 +22,7 @@ $aMenuLinks = Array(
 		""
 	),
 	Array(
-		"Специальная литература",
+		"Библиотека",
 		"special-literature/",
 		Array(),
 		Array(),

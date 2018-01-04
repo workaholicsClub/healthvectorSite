@@ -4849,10 +4849,7 @@ ul.pagination a.active {
   position: relative;
 	border: 1px solid transparent;
 }
-.section-articles--page .wrap-art:hover .group-descript {
-	border: 1px solid #e40421;
-	border-top-color: transparent;
-}
+
 @media screen and (max-width : 1800px) {
   .section-articles .pos-pic-art--right,
   .section-articles .pos-pic-art--left {
