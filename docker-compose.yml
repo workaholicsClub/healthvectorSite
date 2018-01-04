@@ -1,0 +1,71 @@
+version: "2"
+
+services:
+  bitrix:
+    image: workaholic/healthvector-base
+    volumes:
+      - "bitrix:/var/www"
+      - "./www:/var/www/public"
+      - "./vendor:/var/www/vendor"
+      - "./src:/var/www/src"
+      - "./etc/bitrix/tmp/cache:/var/www/public/bitrix_app/cache"
+      - "./etc/bitrix/tmp/managed_cache:/var/www/public/bitrix_app/managed_cache"
+      - "./etc/bitrix/tmp/stack_cache:/var/www/public/bitrix_app/stack_cache"
+      - "./etc/bitrix/tmp/tmp:/var/www/public/bitrix/tmp"
+      - "./app/templates:/var/www/public/bitrix/templates"
+      - "./app/components:/var/www/public/bitrix/components/interlabs"
+      - "./app/php_interface:/var/www/public/bitrix_app/php_interface"
+      - "./app/php_interface:/var/www/public/bitrix/php_interface"
+      - "./etc/bitrix/dbconn.php:/var/www/public/bitrix_app/php_interface/dbconn.php"
+      - "./etc/bitrix/dbconn.php:/var/www/public/bitrix/php_interface/dbconn.php"
+      - "./etc/bitrix/after_connect.php:/var/www/public/bitrix/php_interface/after_connect.php"
+      - "./etc/bitrix/after_connect_d7.php:/var/www/public/bitrix/php_interface/after_connect_d7.php"
+      - "./etc/bitrix/.settings.php:/var/www/public/bitrix/.settings.php"
+
+  nginx:
+    image: nginx
+    ports:
+      - 8080:80
+    volumes_from:
+      - bitrix
+    volumes:
+      - "./etc/nginx/site.conf:/etc/nginx/conf.d/default.conf"
+    depends_on:
+      - php
+
+  php:
+    image: php:7.1-fpm
+    build:
+      context: "."
+      dockerfile: "./etc/php/Dockerfile"
+    working_dir: "/var/www"
+    environment:
+      - DATABASE_USER=${DATABASE_USER}
+      - DATABASE_PASSWORD=${DATABASE_PASSWORD}
+      - DATABASE_SCHEMA=${DATABASE_SCHEMA}
+      - DATABASE_HOST=database
+      - XDEBUG_CONFIG=remote_host=${HOST_IP}
+    volumes_from:
+      - bitrix
+    volumes:
+      - "./vendor:/var/www/vendor"
+      - "./etc/php/log-stdout.conf:/usr/local/etc/php-fpm.d/zz-log.conf"
+      - "./etc/php/xdebug.ini:/usr/local/etc/php/conf.d/xdebug.ini"
+    depends_on:
+      - database
+
+  database:
+    image: mariadb
+    ports:
+      - 33060:3306
+    environment:
+      - MYSQL_ROOT_PASSWORD=${DATABASE_ROOT_PASSWORD}
+      - MYSQL_USER=${DATABASE_USER}
+      - MYSQL_PASSWORD=${DATABASE_PASSWORD}
+      - MYSQL_DATABASE=${DATABASE_SCHEMA}
+    volumes:
+      - "./etc/database/data:/var/lib/mysql"
+      - "./etc/database:/docker-entrypoint-initdb.d"
+
+volumes:
+  bitrix:
