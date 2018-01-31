@@ -6,6 +6,7 @@
 /app/php_interface/after_connect_d7.php
 /app/php_interface/after_connect.php
 .env
+/wiki/
 
 # Боевое окружение
 /www/bitrix_app/
