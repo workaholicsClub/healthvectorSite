@@ -450,6 +450,10 @@ div[class*="coll"].first {
     margin-left: 0 !important;
   }
 }
+.clear {
+	height: 0;
+	clear: both;
+}
 .swiper-container {
   margin: 0 auto;
   position: relative;
@@ -3753,6 +3757,11 @@ ul.pagination a.active {
   background: url("/image/icon-slide-3.png") no-repeat;
   width: 34px;
   height: 43px;
+}
+.slider-container-main .group-btn-nav .btn-nav--n4:before {
+	background: url("/image/icon-slide-4.png") no-repeat;
+	width: 34px;
+	height: 43px;
 }
 .swiper-container--main-test {
   position: relative;
@@ -8164,6 +8173,82 @@ button.swiper-pagination-bullet {
 		margin-top: 25px;
 	}
 }
+
+/*Страница Библиотека*/
+.literature-list-page .section-articles {
+	background: none;
+}
+
+.literature-list-page .section-select {
+	float: left;
+}
+
+.literature-list-page .search {
+	float: right;
+}
+
+.literature-list-page .search input[type=text] {
+	width: 386px;
+	height: 27px;
+	background-color: #fff;
+	border: 1px solid #c3c3c3;
+	padding: 5px 20px;
+	font-size: 14px;
+	font-weight: 300;
+}
+
+.literature-list-page .search .btn-submit {
+	margin-top: 0;
+}
+
+.literature-list-page table tr td:first-child {
+	min-width: 100px;
+	padding: 20px 20px 15px 15px;
+}
+
+.literature-list-page table tr td {
+	padding: 15px;
+	border: 1px solid #c3c3c3;
+	vertical-align: top;
+}
+
+.literature-list-page table tr td h3 {
+	margin-top: 20px;
+}
+
+.literature-list-page table tr td .links {
+	padding: 20px 30px;
+}
+
+.literature-list-page table tr td .links a:nth-child(1) {
+	float: right;
+}
+
+/*Страница Полезные ссылки*/
+.links-page table {
+	width: 100%;
+}
+
+.links-page table tr {
+	border-bottom: 1px dashed #616161;
+}
+
+.links-page table tr:last-child {
+	border-bottom: 0;
+}
+
+.links-page table tr td {
+	padding: 15px 0;
+	vertical-align: top;
+}
+
+.links-page table tr td:first-child {
+	width: 200px;
+	padding: 20px 20px 20px 0;
+	vertical-align: top;
+}
+
+
 
 /*Версия для печати*/
 @media print {
