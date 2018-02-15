@@ -7,7 +7,7 @@
   $is404 = defined('ERROR_404') && ERROR_404 == 'Y';
   $isEditable = true;
   $isPrint = $_GET['print'] == 1;
-  $curPage = $APPLICATION->GetCurPage();
+  $curPage = $APPLICATION->GetCurDir();
   $isMainPage = ($curPage === '/');
   $isAuthorized = Tools::IsAuthorized();
 
@@ -108,7 +108,6 @@
  <?if(!$isMainPage):?>
 
   <div class="middle middle--work">
-
     <div class="breadcrumbs">
       <div class="page">
         <?$APPLICATION->IncludeComponent(

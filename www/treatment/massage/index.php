@@ -86,7 +86,7 @@ $APPLICATION->SetPageProperty("h1", "Реабилитация");
           расправление синусов легких. Этот прием используют у детей, умеющих
           произвольно выполнять вдох и выдох.
       </p>
-      <p>Источник: <a target="_blank" href="http://www.souzserdec.com/sovremennye-metodiki-massazha-i-lechebnoj-fizkultury-pri-dcp/">http://www.souzserdec.com/sovremennye-metodiki-massazha-i-lechebnoj-fizkultury-pri-dcp/</a></p>
+      <p>Источник: <a target="_blank" rel="nofollow" href="http://www.souzserdec.com/sovremennye-metodiki-massazha-i-lechebnoj-fizkultury-pri-dcp/">http://www.souzserdec.com/sovremennye-metodiki-massazha-i-lechebnoj-fizkultury-pri-dcp/</a></p>
     </div>
    </section>
    <section class="nano content-accordeon--item">
@@ -133,10 +133,10 @@ $APPLICATION->SetPageProperty("h1", "Реабилитация");
      <p>- Ушибы и растяжения. Место повреждения в первые 2 - 3 суток не массируют. Делают массаж только проксимальных отделов (выше повреждения), а также области сосудисто-нервного пучка (очень осторожно).</p>
      <p>- Плоскостопие. Проводится массаж всей конечности. Особое внимание уделяют стопе, которую массируют более тщательно и глубоко.</p>
      <p>Источники:<br>
-      <a target="_blank" href="https://www.massage.ru/encyclopedia/massazh-po-sisteme-v-manakova">https://www.massage.ru/encyclopedia/massazh-po-sisteme-v-manakova</a><br>
-      <a target="_blank" href="http://massagelib.ru/books/item/f00/s00/z0000014/st008.shtml">http://massagelib.ru/books/item/f00/s00/z0000014/st008.shtml</a><br>
-      <a target="_blank" href="http://www.souzserdec.com/sovremennye-metodiki-massazha-i-lechebnoj-fizkultury-pri-dcp/">http://www.souzserdec.com/sovremennye-metodiki-massazha-i-lechebnoj-fizkultury-pri-dcp/</a><br>
-      <a target="_blank" href="http://nerv.hvatit-bolet.ru/massazh-pri-dcp.html">http://nerv.hvatit-bolet.ru/massazh-pri-dcp.html</a></p>
+      <a rel="nofollow" target="_blank" href="https://www.massage.ru/encyclopedia/massazh-po-sisteme-v-manakova">https://www.massage.ru/encyclopedia/massazh-po-sisteme-v-manakova</a><br>
+      <a rel="nofollow" target="_blank" href="http://massagelib.ru/books/item/f00/s00/z0000014/st008.shtml">http://massagelib.ru/books/item/f00/s00/z0000014/st008.shtml</a><br>
+      <a rel="nofollow" target="_blank" href="http://www.souzserdec.com/sovremennye-metodiki-massazha-i-lechebnoj-fizkultury-pri-dcp/">http://www.souzserdec.com/sovremennye-metodiki-massazha-i-lechebnoj-fizkultury-pri-dcp/</a><br>
+      <a rel="nofollow" target="_blank" href="http://nerv.hvatit-bolet.ru/massazh-pri-dcp.html">http://nerv.hvatit-bolet.ru/massazh-pri-dcp.html</a></p>
     </div>
    </section>
    <section class="nano content-accordeon--item">

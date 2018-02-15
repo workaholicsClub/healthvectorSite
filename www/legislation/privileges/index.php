@@ -22,10 +22,10 @@ $APPLICATION->SetPageProperty("h1", "Законодательство");
   <p>Социальная пенсия детям-инвалидам устанавливается на весь период инвалидности. Его определяет бюро медико-социальной экспертизы, но не более, чем до дня исполнения ребенку 18 лет. После достижения ребенком-инвалидом 18-летнего возраста он может быть признан инвалидом с детства на основании заключения МСЭ. </p>
   <p>Условия назначения и размеры государственные пенсий регулируются Федеральным законом от 15.12.2001 №166-ФЗ «О государственном пенсионном обеспечении в Российской Федерации». В 2016 году размер пенсии детям-инвалидам и инвалидам с детства I группы составляет 11 903,51 руб. в месяц, инвалидам с детства II группы – 9 919,73 руб. в месяц. </p>
   <p>В 2013 году был увеличен размер ежемесячных выплат родителям (усыновителям) и опекунам (попечителям), ухаживающим за ребенком-инвалидом в возрасте до 18 лет или инвалидом с детства I группы. Он составляет теперь 5 500 руб. против прежних 1 200 руб. Выплаты производятся, если ухаживающий трудоспособен, но не работает. Размер компенсаций иным лицам, осуществляющим уход за указанными гражданами, не изменился – 1 200 руб.</p>
-  <p>Сайт для инвалидов «Дверь в мир» <a target="_blank" href="http://doorinworld.ru/prava-detej-invalidov/deti-invalidy-invalidnost-prava-lgoty-pensiya">http://doorinworld.ru/prava-detej-invalidov/deti-invalidy-invalidnost-prava-lgoty-pensiya</a></p>
-  <p><a target="_blank" href="http://www.osoboedetstvo.ru/rights/simulator/">http://www.osoboedetstvo.ru/rights/simulator/</a></p>
+  <p>Сайт для инвалидов «Дверь в мир» <a rel="nofollow" target="_blank" href="http://doorinworld.ru/prava-detej-invalidov/deti-invalidy-invalidnost-prava-lgoty-pensiya">http://doorinworld.ru/prava-detej-invalidov/deti-invalidy-invalidnost-prava-lgoty-pensiya</a></p>
+  <p><a rel="nofollow" target="_blank" href="http://www.osoboedetstvo.ru/rights/simulator/">http://www.osoboedetstvo.ru/rights/simulator/</a></p>
   <p>Руководствоваться надо федеральным законом № 181-ФЗ от 24.11.1995 «О социальной защите инвалидов в РФ», а также законодательными актами субъектов РФ. <br>
-  <a target="_blank" href="https://rg.ru/1995/11/24/invalidy-dok.html">https://rg.ru/1995/11/24/invalidy-dok.html</a>
+  <a rel="nofollow" target="_blank" href="https://rg.ru/1995/11/24/invalidy-dok.html">https://rg.ru/1995/11/24/invalidy-dok.html</a>
   </p>
   
   <div class="content-accordeon">
@@ -39,7 +39,7 @@ $APPLICATION->SetPageProperty("h1", "Законодательство");
         4) Транспортные льготы <br>
         5) Воспитание и обучение детей-инвалидов <br>
         6) Льготы по медицинскому, санаторно-курортному и протезно-ортопедическому обслуживанию <br>
-        7) Льготы на капитальный ремонт: Скидка в 50% на капремонт для инвалидов 1−2 группы и семей, в которых есть ребёнок-инвалид. Эта выплата действует с 1.01.16. ( <a target="_blank" href="http://doorinworld.ru/stati/lgoty-invalidam-v-2016-godu-samye-poslednie-novosti">http://doorinworld.ru/stati/lgoty-invalidam-v-2016-godu-samye-poslednie-novosti</a> )<br>
+        7) Льготы на капитальный ремонт: Скидка в 50% на капремонт для инвалидов 1−2 группы и семей, в которых есть ребёнок-инвалид. Эта выплата действует с 1.01.16. ( <a rel="nofollow" target="_blank" href="http://doorinworld.ru/stati/lgoty-invalidam-v-2016-godu-samye-poslednie-novosti">http://doorinworld.ru/stati/lgoty-invalidam-v-2016-godu-samye-poslednie-novosti</a> )<br>
         8) Льготы по подоходному налогу</p>
         <p><b>Важно:</b> С 1 января 2016 года инвалиды имеют право на сопровождение. Федеральный закон № 419-ФЗ «О внесении изменений в отдельные законодательные акты Российской Федерации в связи с ратификацией Конвенции о правах инвалидов» в силу вступил с 1 января 2016 года. Часть его статей начнёт действовать с 1 января 2017 года. Внесены изменения в Федеральный закон № 181-ФЗ «О социальной защите инвалидов в РФ». Статья № 15 этого закона говорит о беспрепятственном доступе инвалидов к объектам социальной, инженерной и транспортной инфраструктуры.</p>
       </div>
@@ -116,13 +116,13 @@ $APPLICATION->SetPageProperty("h1", "Законодательство");
   </div>
   <p><b>По вопросам права и льгот семьям, родителям, ребенку-инвалиду, можно проконсультироваться здесь:</b></p>
   <ul>
-    <li><a target="_blank" href="http://lawyer-consult.ru/social_security/prava-invalidov/detej-i-ih-roditelej.html">http://lawyer-consult.ru/social_security/prava-invalidov/detej-i-ih-roditelej.html</a><li>
+    <li><a rel="nofollow" target="_blank" href="http://lawyer-consult.ru/social_security/prava-invalidov/detej-i-ih-roditelej.html">http://lawyer-consult.ru/social_security/prava-invalidov/detej-i-ih-roditelej.html</a><li>
     <li>Сайт для инвалидов «Дверь в мир»<br>
-    <a target="_blank" href="http://doorinworld.ru/prava-detej-invalidov/110-prava-detej-invalidov-i-ix-semej-i-lgoty-predostavlyaemye-takim-semyam">http://doorinworld.ru/prava-detej-invalidov/110-prava-detej-invalidov-i-ix-semej-i-lgoty-predostavlyaemye-takim-semyam</a></li>
+    <a rel="nofollow" target="_blank" href="http://doorinworld.ru/prava-detej-invalidov/110-prava-detej-invalidov-i-ix-semej-i-lgoty-predostavlyaemye-takim-semyam">http://doorinworld.ru/prava-detej-invalidov/110-prava-detej-invalidov-i-ix-semej-i-lgoty-predostavlyaemye-takim-semyam</a></li>
     <li>Сайт для инвалидов «Дверь в мир»<br>
-    <a target="_blank" href="http://doorinworld.ru/stati/617-soczialnaya-podderzhka-invalidov-moskvy">http://doorinworld.ru/stati/617-soczialnaya-podderzhka-invalidov-moskvy</a></li>
+    <a rel="nofollow" target="_blank" href="http://doorinworld.ru/stati/617-soczialnaya-podderzhka-invalidov-moskvy">http://doorinworld.ru/stati/617-soczialnaya-podderzhka-invalidov-moskvy</a></li>
     <li>Сайт для инвалидов и родителей детей-инвалидов<br>
-    <a target="_blank" href="http://www.osoboedetstvo.ru/rights/simulator/">http://www.osoboedetstvo.ru/rights/simulator/</a></li>
+    <a rel="nofollow" target="_blank" href="http://www.osoboedetstvo.ru/rights/simulator/">http://www.osoboedetstvo.ru/rights/simulator/</a></li>
   </ul>
   </div>
 

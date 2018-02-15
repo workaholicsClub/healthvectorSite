@@ -69,7 +69,6 @@ while ($part = $parts->Fetch() ){
         "AJAX_OPTION_STYLE" => "Y",
         "AJAX_OPTION_HISTORY" => "N"
       )
-    );?> </div>
-
-
+    );?>
+  </div>
  <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

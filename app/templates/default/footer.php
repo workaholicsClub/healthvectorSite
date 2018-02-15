@@ -54,7 +54,7 @@
         <a href="" class="social-icon social-icon--num4"></a>
         <a href="" class="social-icon social-icon--num5"></a>
       </div>
-      <div class="copyright-dev">&copy; <?=date('Y');?> Дизайн, разработка сайта - <a target="_blank" href="http://www.interlabs.ru/">Interlabs</a></div>
+      <div class="copyright-dev">&copy; <?=date('Y');?> Дизайн, разработка сайта - <a target="_blank" rel="nofollow" href="http://www.interlabs.ru/">Interlabs</a></div>
     </div>
   </div>
 </footer>

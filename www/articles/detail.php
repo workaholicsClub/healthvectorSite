@@ -17,7 +17,7 @@ $APPLICATION->SetTitle("Статьи");?> <?$APPLICATION->IncludeComponent(
 		"META_KEYWORDS" => "-",
 		"META_DESCRIPTION" => "-",
 		"BROWSER_TITLE" => "-",
-		"SET_TITLE" => "N",
+		"SET_TITLE" => "Y",
 		"SET_STATUS_404" => "N",
 		"INCLUDE_IBLOCK_INTO_CHAIN" => "N",
 		"ADD_SECTIONS_CHAIN" => "N",

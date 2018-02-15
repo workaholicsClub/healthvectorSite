@@ -1,5 +1,5 @@
 <?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
-$select = array(
+/*$select = array(
   "reference" => array(
   ),
   "reference_id" =>array(
@@ -16,5 +16,5 @@ foreach( $arResult['ITEMS'] as $id => $item ) {
     $select['reference'][] = $item['NAME'];
     $select['reference_id'][] = $item['CODE'];
 }
-$arResult['SELECT'] = $select;
+$arResult['SELECT'] = $select;*/
 ?>

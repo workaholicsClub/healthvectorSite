@@ -3805,7 +3805,7 @@ ul.pagination a.active {
   position: absolute;
   height: 27px;
   width: 100%;
-  top: -13px;
+  top: -23px;
   left: auto;
   z-index: 100;
   cursor: pointer;
@@ -8078,6 +8078,11 @@ button.swiper-pagination-bullet {
 	box-shadow: 0 0 15px -1px rgba(0,0,0,0.2);
 }
 
+.info-list .item:nth-child(odd) {
+	margin-left: 0;
+	margin-right: 2%;
+}
+
 .info-list .item:hover {
 	border-color: #e40421;
 }
@@ -8156,6 +8161,10 @@ button.swiper-pagination-bullet {
 
 	.info-list .item {
 		width: auto;
+	}
+
+	.info-list .item:nth-child(odd) {
+		margin: 10px 1%;
 	}
 
 	.list-detail .image,
