@@ -6,11 +6,32 @@ class HTMLToWikiConverter {
     private $files;
     private $convertedFiles;
 
+    private $urls;
+    private $convertedUrls;
+
     public static function convert($fromDirectory, $toDirectory) {
         $instance = new HTMLToWikiConverter();
         $instance->loadFiles($fromDirectory);
         $instance->convertFiles();
         $instance->saveFiles($toDirectory);
+    }
+
+    public static function convertUrls($urlFileName, $toDirectory) {
+        $instance = new HTMLToWikiConverter();
+        $instance->loadUrls($urlFileName);
+        $instance->convertUrlsContent();
+        $instance->saveUrls($toDirectory);
+    }
+
+    public function loadUrls($filename) {
+        $urlList = explode("\n", file_get_contents($filename));
+        foreach ($urlList as $url) {
+            $this->urls[$url] = $this->fetchUrl($url);
+        }
+    }
+
+    public function fetchUrl($url) {
+        return file_get_contents($url);
     }
 
     /**
@@ -36,6 +57,23 @@ class HTMLToWikiConverter {
     private function removePhpCode($php) {
         $html = preg_replace("/<\?(php)*.*?\?>/usm", "", $php);
         return $html;
+    }
+
+    private function getHtmlBody($fullHtml) {
+        preg_match('#<body>(.*)?</body>#uism', $fullHtml, $matches);
+        return $matches[1];
+    }
+
+    private function removePageHeader($html) {
+        return preg_replace('#<header.*?</header>#uism', '', $html);
+    }
+
+    private function removePageFooter($html) {
+        return preg_replace('#<footer.*#uism', '', $html);
+    }
+
+    private function removeScripts($html) {
+        return preg_replace('#<script.*?</script>#uism', '', $html);
     }
 
     private function convertFormatTags($html) {
@@ -78,10 +116,10 @@ class HTMLToWikiConverter {
         foreach ($imgTags[0] as $imgTag) {
             $attrs = $this->parseTagAttrs($imgTag);
             $src = isset($attrs['src']) ? $attrs['src'] : '';
-            $absoluteSrc = 'https://healthvector.ru/'.$src;
+            $absoluteSrc = 'https://healthvector.ru'.$src;
             $caption = isset($attrs['alt']) ? $attrs['alt'] : '';
 
-            $wikiTag = "[{$absoluteSrc}|{$caption}]";
+            $wikiTag = "{$absoluteSrc}";
             $html = str_replace($imgTag, $wikiTag, $html);
         }
 
@@ -198,13 +236,31 @@ class HTMLToWikiConverter {
         return $wiki;
     }
 
+    public function convertUrlToWiki($html) {
+        $headers = $this->extractHeaders($html);
+        $html = $this->getHtmlBody($html);
+        $html = $this->removePageHeader($html);
+        $html = $this->removePageFooter($html);
+        $html = $this->removeScripts($html);
+        $html = $this->addHeaderTags($headers, $html);
+        $wiki = $this->convertHtmlToWiki($html);
+        return $wiki;
+    }
+
     public function convertFiles() {
         foreach ($this->files as $filename => $fileContents) {
             $this->convertedFiles[ $filename ] = $this->convertPhpToWiki($fileContents);
         }
     }
 
+    public function convertUrlsContent() {
+        foreach ($this->urls as $url => $urlContents) {
+            $this->convertedUrls[$url] = $this->convertUrlToWiki($urlContents);
+        }
+    }
+
     private function convertToWikiFilename($filename) {
+        $filename = preg_replace('#https*://(www\.)*healthvector.ru/#ui', '', $filename);
         $filename = str_replace('www/', '', $filename);
         $filename = str_replace('/', '_', $filename);
         $filename = str_replace('_index.php', '.txt', $filename);
@@ -219,6 +275,15 @@ class HTMLToWikiConverter {
         foreach ($this->convertedFiles as $filename => $wikiContents) {
             $newFilename = $this->convertToWikiFilename($filename);
             $fullName = $directory.'/'.$newFilename;
+            file_put_contents($fullName, $wikiContents);
+            echo $fullName."\n";
+        }
+    }
+
+    public function saveUrls($directory) {
+        foreach ($this->convertedUrls as $url => $wikiContents) {
+            $wikiFilename = $this->convertToWikiFilename($url);
+            $fullName = $directory.'/'.$wikiFilename;
             file_put_contents($fullName, $wikiContents);
             echo $fullName."\n";
         }
